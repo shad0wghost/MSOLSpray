@@ -110,6 +110,7 @@
                 # Standard invalid password
             If($RespErr -match "AADSTS50126")
                 {
+                Write-Output "[*] Invalid The user $username : $password had an invalid password" 
                 continue
                 }
 
